@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GallosYommys.Core", "GallosYommys.Core\GallosYommys.Core.csproj", "{6106809C-79FA-480A-B5B0-37CC9D79E916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GallosYommys.WebAPI", "GallosYommys.WebAPI\GallosYommys.WebAPI.csproj", "{788A46F9-88DC-4785-804B-F916CA1A3F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6106809C-79FA-480A-B5B0-37CC9D79E916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6106809C-79FA-480A-B5B0-37CC9D79E916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6106809C-79FA-480A-B5B0-37CC9D79E916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6106809C-79FA-480A-B5B0-37CC9D79E916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788A46F9-88DC-4785-804B-F916CA1A3F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788A46F9-88DC-4785-804B-F916CA1A3F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788A46F9-88DC-4785-804B-F916CA1A3F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788A46F9-88DC-4785-804B-F916CA1A3F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
