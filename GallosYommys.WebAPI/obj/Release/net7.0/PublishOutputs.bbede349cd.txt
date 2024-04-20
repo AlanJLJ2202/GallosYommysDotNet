@@ -1,0 +1,17 @@
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI
+/Users/alanjlj/RiderProjects/GallosYommys/publish/appsettings.Development.json
+/Users/alanjlj/RiderProjects/GallosYommys/publish/appsettings.json
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.deps.json
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.runtimeconfig.json
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.pdb
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Dapper.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Dapper.Contrib.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Microsoft.OpenApi.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/MySqlConnector.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Swashbuckle.AspNetCore.Swagger.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.Core.dll
+/Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.Core.pdb

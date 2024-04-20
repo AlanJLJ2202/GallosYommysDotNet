@@ -1,0 +1,11 @@
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/bin/Release/net7.0/GallosYommys.Core.deps.json
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/bin/Release/net7.0/GallosYommys.Core.dll
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/bin/Release/net7.0/GallosYommys.Core.pdb
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/GallosYommys.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/GallosYommys.Core.AssemblyInfoInputs.cache
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/GallosYommys.Core.AssemblyInfo.cs
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/GallosYommys.Core.csproj.CoreCompileInputs.cache
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/GallosYommys.Core.dll
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/refint/GallosYommys.Core.dll
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/GallosYommys.Core.pdb
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/obj/Release/net7.0/ref/GallosYommys.Core.dll
