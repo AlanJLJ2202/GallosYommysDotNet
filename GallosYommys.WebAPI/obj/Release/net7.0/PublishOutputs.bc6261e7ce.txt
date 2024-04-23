@@ -1,0 +1,17 @@
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.WebAPI
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/appsettings.Development.json
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/appsettings.json
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.WebAPI.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.WebAPI.deps.json
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.WebAPI.runtimeconfig.json
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.WebAPI.pdb
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Dapper.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Dapper.Contrib.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Microsoft.Extensions.Logging.Abstractions.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Microsoft.OpenApi.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/MySqlConnector.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Swashbuckle.AspNetCore.Swagger.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Swashbuckle.AspNetCore.SwaggerGen.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/Swashbuckle.AspNetCore.SwaggerUI.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.Core.dll
+/var/folders/vz/d5ch_f_904n5bchptf89j1p00000gn/T/rider-publish6509131967884618708/GallosYommys.Core.pdb

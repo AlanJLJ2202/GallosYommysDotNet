@@ -36,3 +36,8 @@
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/obj/Debug/net7.0/GallosYommys.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/publish/web.config
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/publish/appsettings.Development.json
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/publish/appsettings.json
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/publish/GallosYommys.WebAPI.deps.json
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Debug/net7.0/publish/GallosYommys.WebAPI.runtimeconfig.json

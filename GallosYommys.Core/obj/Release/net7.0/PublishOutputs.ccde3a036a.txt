@@ -1,0 +1,3 @@
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/bin/Release/net7.0/publish/GallosYommys.Core.dll
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/bin/Release/net7.0/publish/GallosYommys.Core.deps.json
+/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.Core/bin/Release/net7.0/publish/GallosYommys.Core.pdb

@@ -10,13 +10,13 @@ public class ProductService : IProductService
 {
     
     private readonly IProductRepository _productRepository;
-    private readonly string _domain;
+    //private readonly string _domain;
 
     
-    public ProductService(IProductRepository productRepository, string domain)
+    public ProductService(IProductRepository productRepository)
     {
         _productRepository = productRepository;
-        _domain = domain;
+        //_domain = domain;
     }
     
     

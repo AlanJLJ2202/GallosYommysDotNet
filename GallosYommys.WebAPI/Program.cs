@@ -8,6 +8,7 @@ using GallosYommys.WebAPI.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -15,13 +16,21 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IListaProductosRepository, ListaProductosRepository>();
+builder.Services.AddScoped<IListaProductosService, ListaProductosService>();
+builder.Services.AddScoped<IListaComprasRepository, ListaComprasRepository>();
+builder.Services.AddScoped<IListaComprasService, ListaComprasService>();
+builder.Services.AddScoped<ICategoriasRepository, CategoriasRepository>();
+builder.Services.AddScoped<ICategoriasService, CategoriasService>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IUsersService, UsersService>();
 builder.Services.AddScoped<IDbContext, DbContext>();
 
 
 // Agregar la configuración del dominio
-builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
-var domain = builder.Configuration["AppSettings:Domain"];
-builder.Services.AddSingleton(domain); // Agrega el dominio como servicio singleton
+// builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+// var domain = builder.Configuration["AppSettings:Domain"];
+// builder.Services.AddSingleton(domain);
 
 var app = builder.Build();
 
