@@ -24,6 +24,10 @@ builder.Services.AddScoped<ICategoriasRepository, CategoriasRepository>();
 builder.Services.AddScoped<ICategoriasService, CategoriasService>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddScoped<ITransaccionesRepository, TransaccionesRepository>();
+builder.Services.AddScoped<ITransaccionesService, TransaccionesService>();
+builder.Services.AddScoped<IBalancesRepository, BalancesRepository>();
+builder.Services.AddScoped<IBalancesService, BalancesService>();
 builder.Services.AddScoped<IDbContext, DbContext>();
 
 
