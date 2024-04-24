@@ -1,3 +1,4 @@
+using Dapper;
 using Dapper.Contrib.Extensions;
 using GallosYommys.Core.Entities;
 using GallosYommys.WebAPI.DataAccess.Interfaces;
@@ -20,19 +21,6 @@ public class ProductRepository : IProductRepository
     {
         
         await _dbContext.Connection.InsertAsync(product);
-        
-        /*string sql = $"INSERT INTO Products (Name, Description) VALUES ('{product.Name}', '{product.Description}')";
-    
-        await _dbContext.Connection.OpenAsync();
-    
-        using (var command = _dbContext.Connection.CreateCommand())
-        {
-            command.CommandText = sql;
-        
-            await command.ExecuteNonQueryAsync();
-        }
-    
-        _dbContext.Connection.Close();*/
     
         return product;
     }
@@ -41,19 +29,6 @@ public class ProductRepository : IProductRepository
     public async Task<Products> UpdateAsync(Products product)
     {
         await _dbContext.Connection.UpdateAsync(product);
-        
-        /*string sql = $"UPDATE Products SET Name = '{product.Name}', Description = '{product.Description}' WHERE Id = {product.id}";
-    
-        await _dbContext.Connection.OpenAsync();
-    
-        using (var command = _dbContext.Connection.CreateCommand())
-        {
-            command.CommandText = sql;
-        
-            await command.ExecuteNonQueryAsync();
-        }
-    
-        _dbContext.Connection.Close();*/
     
         return product;
     }
@@ -61,7 +36,10 @@ public class ProductRepository : IProductRepository
     
     public async Task<List<Products>> GetAllAsync()
     {
-        return (await _dbContext.Connection.GetAllAsync<Products>()).ToList();
+        //where IsDeleted = false
+        const string query = "SELECT * FROM Products WHERE IsDeleted = 0";
+        var products = await _dbContext.Connection.QueryAsync<Products>(query);
+        return products.ToList();
     }
     
     

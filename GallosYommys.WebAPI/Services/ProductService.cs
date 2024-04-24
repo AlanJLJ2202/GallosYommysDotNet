@@ -32,6 +32,7 @@ public class ProductService : IProductService
         {
             Name = product.Name,
             Description = product.Description,
+            
             CreatedBy = "",
             CreatedDate = DateTime.Now,
             UpdatedBy = "",
@@ -68,6 +69,8 @@ public class ProductService : IProductService
     {
         
         var products = await _productRepository.GetAllAsync();
+        
+        
         
         return products.Select(p => new ProductDto
         {

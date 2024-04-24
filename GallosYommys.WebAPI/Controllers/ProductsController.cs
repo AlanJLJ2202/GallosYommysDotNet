@@ -83,6 +83,7 @@ public class ProductsController : ControllerBase
     
     
     [HttpDelete]
+    
     public async Task<ActionResult<Response<bool>>> Delete(int id)
     {
         var response = new Response<bool>();
