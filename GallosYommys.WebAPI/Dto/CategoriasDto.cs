@@ -18,7 +18,7 @@ public class CategoriasDto : DtoBase
     {
         id = categorias.id;
         user_id = categorias.user_id;
-        nombre = categorias.nombre;
+        nombre = categorias.name;
     }
     
 }

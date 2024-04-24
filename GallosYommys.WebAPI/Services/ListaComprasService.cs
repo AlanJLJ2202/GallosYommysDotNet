@@ -8,7 +8,6 @@ namespace GallosYommys.WebAPI.Services;
 
 public class ListaComprasService : IListaComprasService
 {
-    
     private readonly IListaComprasRepository _listaComprasRepository;
     
     public ListaComprasService(IListaComprasRepository listaComprasRepository)
@@ -19,13 +18,18 @@ public class ListaComprasService : IListaComprasService
     public async Task<bool> ListaComprasExist(int id)
     {
         var listaCompras = await _listaComprasRepository.GetById(id);
-        return (listaCompras != null);
+        if (listaCompras.IsDeleted)
+        {
+            return false;
+        }
+        return true;
     }
     
     public async Task<ListaComprasDto> SaveAsync(ListaComprasDto listaCompras)
     {
         var listaComprasEntity = new ListaCompras
         {
+            user_id = listaCompras.user_id,
             nombre = listaCompras.nombre,
             fecha = listaCompras.fecha,
             CreatedBy = "",
@@ -48,7 +52,8 @@ public class ListaComprasService : IListaComprasService
 
         if (listaComprasEntity == null)
             throw new Exception("listaCompras not found");
-            
+
+        listaComprasEntity.user_id = listaCompras.user_id;
         listaComprasEntity.nombre = listaCompras.nombre;
         listaComprasEntity.fecha = listaCompras.fecha;
         listaComprasEntity.UpdatedBy = "";

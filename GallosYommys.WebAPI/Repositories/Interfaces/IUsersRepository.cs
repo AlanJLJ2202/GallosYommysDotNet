@@ -4,7 +4,8 @@ namespace GallosYommys.WebAPI.Repositories.Interfaces;
 
 public interface IUsersRepository
 {
- 
+    //Task<Users> Login(string email, string password);
+    
     Task<Users> SaveAsync(Users users);
     
     //Metodo para Actualizar los productos

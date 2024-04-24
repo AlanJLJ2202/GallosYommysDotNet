@@ -27,7 +27,8 @@ public class CategoriasService : ICategoriasService
     {
         var categoriasEntity = new Categorias
         {
-            nombre = categorias.nombre,
+            name = categorias.nombre,
+            user_id = categorias.user_id,
             CreatedBy = "",
             CreatedDate = DateTime.Now,
             UpdatedBy = "",
@@ -49,7 +50,8 @@ public class CategoriasService : ICategoriasService
         if (categoriasEntity == null)
             throw new Exception("categorias not found");
             
-        categoriasEntity.nombre = categorias.nombre;
+        categoriasEntity.name = categorias.nombre;
+        categoriasEntity.user_id = categorias.user_id;
         categoriasEntity.UpdatedBy = "";
         categoriasEntity.UpdatedDate = DateTime.Now;
         
@@ -64,7 +66,7 @@ public class CategoriasService : ICategoriasService
         return categorias.Select(c => new CategoriasDto
         {
             id = c.id,
-            nombre = c.nombre
+            nombre = c.name
         }).ToList();
     }
     

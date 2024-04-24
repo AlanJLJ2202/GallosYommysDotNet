@@ -4,6 +4,8 @@ namespace GallosYommys.WebAPI.Services.Interfaces;
 
 public interface IUsersService
 {
+
+    //Task<UsersDto> Login(UsersDto users);
     
     Task<bool> UsersExist(int id);
     

@@ -1,3 +1,4 @@
+using Dapper;
 using Dapper.Contrib.Extensions;
 using GallosYommys.Core.Entities;
 using GallosYommys.WebAPI.DataAccess.Interfaces;
@@ -16,6 +17,23 @@ public class UsersRepository : IUsersRepository
         _dbContext = context;
     }
     
+    /*public async Task<Users?> Login(string email, string password)
+    {
+        try
+        {
+            // Realiza una consulta para encontrar el usuario por su nombre de usuario y contraseña
+            var query = "SELECT * FROM Users WHERE Email = @email AND Password = @Password";
+            var user = await _dbContext.Connection.QueryFirstOrDefaultAsync<Users>(query, new { Email = email, Password = password });
+
+            return user;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al intentar iniciar sesión: {ex.Message}");
+            return null;
+        }
+    }*/
+
     public async Task<Users> SaveAsync(Users users)
     {
         await _dbContext.Connection.InsertAsync(users);
@@ -39,7 +57,6 @@ public class UsersRepository : IUsersRepository
     {
         try
         {
-
             var users = await GetById(id);
 
             if (users == null)

@@ -27,6 +27,8 @@ public class UsersService : IUsersService
         var usersEntity = new Users
         {
             name = users.name,
+            email = users.email,
+            password = users.password,
             CreatedBy = "",
             CreatedDate = DateTime.Now,
             UpdatedBy = "",
@@ -49,6 +51,8 @@ public class UsersService : IUsersService
             throw new Exception("users not found");
             
         usersEntity.name = users.name;
+        usersEntity.email = users.email;
+        usersEntity.password = users.password;
         usersEntity.UpdatedBy = "";
         usersEntity.UpdatedDate = DateTime.Now;
         
@@ -81,7 +85,8 @@ public class UsersService : IUsersService
         return new UsersDto
         {
             id = users.id,
-            name = users.name
+            name = users.name,
+            email = users.email
         };
     }
     
