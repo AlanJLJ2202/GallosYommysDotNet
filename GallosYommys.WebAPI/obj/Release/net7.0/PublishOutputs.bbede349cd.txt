@@ -1,11 +1,6 @@
 /Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI
-/Users/alanjlj/RiderProjects/GallosYommys/publish/publish/web.config
 /Users/alanjlj/RiderProjects/GallosYommys/publish/appsettings.Development.json
 /Users/alanjlj/RiderProjects/GallosYommys/publish/appsettings.json
-/Users/alanjlj/RiderProjects/GallosYommys/publish/publish/appsettings.Development.json
-/Users/alanjlj/RiderProjects/GallosYommys/publish/publish/appsettings.json
-/Users/alanjlj/RiderProjects/GallosYommys/publish/publish/GallosYommys.WebAPI.deps.json
-/Users/alanjlj/RiderProjects/GallosYommys/publish/publish/GallosYommys.WebAPI.runtimeconfig.json
 /Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.dll
 /Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.deps.json
 /Users/alanjlj/RiderProjects/GallosYommys/publish/GallosYommys.WebAPI.runtimeconfig.json

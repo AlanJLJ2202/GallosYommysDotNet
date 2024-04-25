@@ -60,9 +60,9 @@ public class CategoriasService : ICategoriasService
         return categorias;
     }
     
-    public async Task<List<CategoriasDto>> GetAllAsync()
+    public async Task<List<CategoriasDto>> GetAllAsync(int user_id)
     {
-        var categorias = await _categoriasRepository.GetAllAsync();
+        var categorias = await _categoriasRepository.GetAllAsync(user_id);
         return categorias.Select(c => new CategoriasDto
         {
             id = c.id,

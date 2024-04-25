@@ -19,4 +19,5 @@ public interface IBalancesRepository
     //Metodo para obtener un producto
     Task<Balances?> GetById(int id);
     
+    Task<Balances?> GetByUserId(int id);
 }

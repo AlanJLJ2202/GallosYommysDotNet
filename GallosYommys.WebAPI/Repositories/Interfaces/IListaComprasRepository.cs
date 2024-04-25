@@ -10,7 +10,7 @@ public interface IListaComprasRepository
     Task<ListaCompras> UpdateAsync(ListaCompras listaCompras);
     
     //Metodo para retornar una lista de productos
-    Task<List<ListaCompras>> GetAllAsync();
+    Task<List<ListaCompras>> GetAllAsync(int user_id);
     
     //Metodo para retornar el id de los productos que se borrará
     Task<bool> DeleteAsync(int id);

@@ -1,11 +1,6 @@
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/GallosYommys.WebAPI
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/publish/web.config
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/appsettings.Development.json
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/appsettings.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/publish/appsettings.Development.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/publish/appsettings.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/publish/GallosYommys.WebAPI.deps.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/publish/GallosYommys.WebAPI.runtimeconfig.json
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/GallosYommys.WebAPI.dll
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/GallosYommys.WebAPI.deps.json
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/GallosYommys.WebAPI.runtimeconfig.json

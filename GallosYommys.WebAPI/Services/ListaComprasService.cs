@@ -65,9 +65,9 @@ public class ListaComprasService : IListaComprasService
     }
     
     
-    public async Task<List<ListaComprasDto>> GetAllAsync()
+    public async Task<List<ListaComprasDto>> GetAllAsync(int user_id)
     {
-        var listaCompras = await _listaComprasRepository.GetAllAsync();
+        var listaCompras = await _listaComprasRepository.GetAllAsync(user_id);
         return listaCompras.Select(x => new ListaComprasDto(x)).ToList();
     }
 

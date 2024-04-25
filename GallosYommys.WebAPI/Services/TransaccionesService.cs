@@ -30,6 +30,7 @@ public class TransaccionesService : ITransaccionesService
             user_id = transacciones.user_id,
             fecha = transacciones.fecha,
             monto = transacciones.monto,
+            descripcion = transacciones.descripcion,
             tipo = transacciones.tipo,
             CreatedBy = "",
             CreatedDate = DateTime.Now,
@@ -65,14 +66,15 @@ public class TransaccionesService : ITransaccionesService
     }
 
 
-    public async Task<List<TransaccionesDto>> GetAllAsync()
+    public async Task<List<TransaccionesDto>> GetAllAsync(int user_id)
     {
-        var transacciones = await _transaccionesRepository.GetAllAsync();
+        var transacciones = await _transaccionesRepository.GetAllAsync(user_id);
         return transacciones.Select(t => new TransaccionesDto
         {
             id = t.id,
             user_id = t.user_id,
             monto = t.monto,
+            tipo = t.tipo,
             descripcion = t.descripcion,
             fecha = t.fecha
         }).ToList();

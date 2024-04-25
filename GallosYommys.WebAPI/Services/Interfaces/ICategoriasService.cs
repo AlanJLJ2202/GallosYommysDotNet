@@ -12,7 +12,7 @@ public interface ICategoriasService
     Task<CategoriasDto> UpdateAsync(CategoriasDto categorias);
     
     //Metodo para retornar una lista de productos
-    Task<List<CategoriasDto>> GetAllAsync();
+    Task<List<CategoriasDto>> GetAllAsync(int user_id);
     
     //Metodo para retornar el id de los productos que se borrará
     Task<bool> DeleteAsync(int id);

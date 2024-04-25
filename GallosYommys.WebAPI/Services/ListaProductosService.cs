@@ -71,9 +71,9 @@ public class ListaProductosService : IListaProductosService
     }
     
     
-    public async Task<List<ListaProductosDto>> GetAllAsync()
+    public async Task<List<ListaProductosDto>> GetAllAsync(int lista_id)
     {
-        var listaProductos = await _listaProductosRepository.GetAllAsync();
+        var listaProductos = await _listaProductosRepository.GetAllAsync(lista_id);
         return listaProductos.Select(x => new ListaProductosDto(x)).ToList();
     }
 

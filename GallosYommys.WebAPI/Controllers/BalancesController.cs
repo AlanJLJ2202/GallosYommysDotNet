@@ -59,6 +59,27 @@ public class BalancesController : ControllerBase
     }
     
     
+    [HttpGet]
+    [Route("user/{userId:int}")]
+    public async Task<ActionResult<Response<BalancesDto>>> GetByUserId(int userId)
+    {
+        var response = new Response<BalancesDto>();
+
+        // if (!await _balancesService.BalancesExist(userId))
+        // {
+        //     response.Errors.Add("Balances not found");
+        //     return NotFound(response);
+        // }
+
+        var product = await _balancesService.GetByUserId(userId);
+
+        response.data = product;
+        response.Message = "Balances found";
+
+        return Ok(response);
+    }
+    
+    
     [HttpPut]
     public async Task<ActionResult<Response<BalancesDto>>> Put([FromBody] BalancesDto balancesDto)
     {

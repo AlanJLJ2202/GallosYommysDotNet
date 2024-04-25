@@ -21,4 +21,6 @@ public interface IBalancesService
     
     //Metodo para obtener un producto
     Task<BalancesDto?> GetById(int id);
+    
+    Task<BalancesDto?> GetByUserId(int id);
 }

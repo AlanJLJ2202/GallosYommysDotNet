@@ -36,8 +36,3 @@
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/obj/Release/net7.0/GallosYommys.WebAPI.pdb
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/obj/Release/net7.0/GallosYommys.WebAPI.genruntimeconfig.cache
 /Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/obj/Release/net7.0/ref/GallosYommys.WebAPI.dll
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/appsettings.Development.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/appsettings.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/web.config
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/GallosYommys.WebAPI.deps.json
-/Users/alanjlj/RiderProjects/GallosYommys/GallosYommys.WebAPI/bin/Release/net7.0/publish/GallosYommys.WebAPI.runtimeconfig.json

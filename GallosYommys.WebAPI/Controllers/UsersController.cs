@@ -19,6 +19,25 @@ public class UsersController : ControllerBase
         }
         
         
+        //login
+        
+        [HttpPost]
+        [Route("login")]
+        public async Task<ActionResult<Response<UsersDto>>> Login([FromBody] UsersDto usersDto)
+        {
+            var response = new Response<UsersDto>();
+            response.data = await _usersService.Login(usersDto);
+            
+            if (response.data == null)
+            {
+                response.Errors.Add("User not found");
+                return NotFound(response);
+            }
+            
+            return Ok(response);
+        }
+        
+        
         [HttpGet]
         public async Task<ActionResult<Response<List<Users>>>> GetAll()
         {

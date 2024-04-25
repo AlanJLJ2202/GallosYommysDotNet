@@ -30,9 +30,10 @@ public class ProductService : IProductService
     {
         var productEntity = new Products
         {
+            user_id = product.user_id,
             Name = product.Name,
             Description = product.Description,
-            
+            precio_compra = product.precio_compra,
             CreatedBy = "",
             CreatedDate = DateTime.Now,
             UpdatedBy = "",
@@ -54,8 +55,10 @@ public class ProductService : IProductService
         if (productEntity == null)
             throw new Exception("product not found");
             
+        productEntity.user_id = product.user_id;
         productEntity.Name = product.Name;
         productEntity.Description = product.Description;
+        productEntity.precio_compra = product.precio_compra;    
         productEntity.UpdatedBy = "";
         productEntity.UpdatedDate = DateTime.Now;
         
@@ -65,18 +68,20 @@ public class ProductService : IProductService
     }
     
     
-    public async Task<List<ProductDto>> GetAllAsync()
+    public async Task<List<ProductDto>> GetAllAsync(int user_id)
     {
         
-        var products = await _productRepository.GetAllAsync();
+        var products = await _productRepository.GetAllAsync(user_id);
         
         
         
         return products.Select(p => new ProductDto
         {
             id = p.id,
+            user_id = p.user_id,
             Name = p.Name,
-            Description = p.Description
+            Description = p.Description,
+            precio_compra = p.precio_compra
         }).ToList();
     }
     

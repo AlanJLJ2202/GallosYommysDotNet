@@ -11,7 +11,7 @@ public interface ITransaccionesRepository
     Task<Transacciones> UpdateAsync(Transacciones transacciones);
     
     //Metodo para retornar una lista de productos
-    Task<List<Transacciones>> GetAllAsync();
+    Task<List<Transacciones>> GetAllAsync(int user_id);
     
     //Metodo para retornar el id de los productos que se borrará
     Task<bool> DeleteAsync(int id);

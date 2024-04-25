@@ -34,11 +34,11 @@ public class ProductRepository : IProductRepository
     }
     
     
-    public async Task<List<Products>> GetAllAsync()
+    public async Task<List<Products>> GetAllAsync(int user_id)
     {
         //where IsDeleted = false
-        const string query = "SELECT * FROM Products WHERE IsDeleted = 0";
-        var products = await _dbContext.Connection.QueryAsync<Products>(query);
+        const string query = "SELECT * FROM Products WHERE IsDeleted = 0 AND user_id = @user_id ORDER BY CreatedDate DESC";
+        var products = await _dbContext.Connection.QueryAsync<Products>(query, new { user_id });
         return products.ToList();
     }
     

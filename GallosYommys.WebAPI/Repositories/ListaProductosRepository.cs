@@ -1,3 +1,4 @@
+using Dapper;
 using Dapper.Contrib.Extensions;
 using GallosYommys.Core.Entities;
 using GallosYommys.WebAPI.DataAccess.Interfaces;
@@ -30,10 +31,13 @@ public class ListaProductosRepository : IListaProductosRepository
         return listaProductos;
     }
     
-    public async Task<List<ListaProductos>> GetAllAsync()
+    public async Task<List<ListaProductos>> GetAllAsync(int lista_id)
     {
-        return (await _dbContext.Connection.GetAllAsync<ListaProductos>()).ToList();
+        const string query = "SELECT * FROM ListaProductos WHERE IsDeleted = 0 AND lista_compra_id = @lista_id";
+        var listaProductos = await _dbContext.Connection.QueryAsync<ListaProductos>(query, new { lista_id });
+        return listaProductos.ToList();
     }
+    
 
     public async Task<ListaProductos?> GetById(int id)
     {

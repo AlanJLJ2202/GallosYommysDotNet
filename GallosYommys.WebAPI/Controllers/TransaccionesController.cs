@@ -19,10 +19,10 @@ public class TransaccionesController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<Response<List<Transacciones>>>> GetAll()
+    public async Task<ActionResult<Response<List<Transacciones>>>> GetAll(int user_id)
     {
         var response = new Response<List<TransaccionesDto>>();
-        response.data = await _transaccionesService.GetAllAsync();
+        response.data = await _transaccionesService.GetAllAsync(user_id);
 
         return Ok(response);
     }

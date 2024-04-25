@@ -88,4 +88,15 @@ public class BalancesService : IBalancesService
     {
         return await _balancesRepository.DeleteAsync(id);
     }
+    
+    public async Task<BalancesDto?> GetByUserId(int userId)
+    {
+        var balances = await _balancesRepository.GetByUserId(userId);
+
+        if (balances == null)
+        {
+            return null;
+        }
+        return new BalancesDto(balances);
+    }
 }

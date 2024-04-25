@@ -19,10 +19,10 @@ private readonly IListaComprasService _listaComprasService;
     }
     
     [HttpGet]
-    public async Task<ActionResult<Response<List<ListaCompras>>>> GetAll()
+    public async Task<ActionResult<Response<List<ListaCompras>>>> GetAll(int user_id)
     {
         var response = new Response<List<ListaComprasDto>>();
-        response.data = await _listaComprasService.GetAllAsync();
+        response.data = await _listaComprasService.GetAllAsync(user_id);
         
         return Ok(response);
     }

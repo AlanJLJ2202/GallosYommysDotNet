@@ -15,6 +15,24 @@ public class UsersService : IUsersService
         _usersRepository = usersRepository;
     }
     
+    
+    public async Task<UsersDto?> Login(UsersDto users)
+    {
+        var usersEntity = await _usersRepository.Login(users.email, users.password);
+        
+        if (usersEntity == null)
+        {
+            return null;
+        }
+        
+        return new UsersDto
+        {
+            id = usersEntity.id,
+            name = usersEntity.name,
+            email = usersEntity.email
+        };
+    }
+    
     public async Task<bool> UsersExist(int id)
     {
         var users = await _usersRepository.GetById(id);

@@ -12,7 +12,7 @@ public interface IProductRepository
     
     //Metodo para retornar una lista de productos
     
-    Task<List<Products>> GetAllAsync();
+    Task<List<Products>> GetAllAsync(int user_id);
     
     //Metodo para retornar el id de los productos que se borrará
     

@@ -1,3 +1,4 @@
+using Dapper;
 using Dapper.Contrib.Extensions;
 using GallosYommys.Core.Entities;
 using GallosYommys.WebAPI.DataAccess.Interfaces;
@@ -28,9 +29,13 @@ public class TransaccionesRepository : ITransaccionesRepository
         return transacciones;
     }
     
-    public async Task<List<Transacciones>> GetAllAsync()
+    public async Task<List<Transacciones>> GetAllAsync(int user_id)
     {
-        return (await _dbContext.Connection.GetAllAsync<Transacciones>()).ToList();
+        //where IsDeleted = false
+        const string query = "SELECT * FROM Transacciones WHERE IsDeleted = 0 AND user_id = @user_id ORDER BY CreatedDate DESC";
+    
+        var transacciones = await _dbContext.Connection.QueryAsync<Transacciones>(query, new { user_id });
+        return transacciones.ToList();
     }
 
 

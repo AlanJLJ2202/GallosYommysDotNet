@@ -10,7 +10,7 @@ public interface ICategoriasRepository
     Task<Categorias> UpdateAsync(Categorias categorias);
     
     //Metodo para retornar una lista de productos
-    Task<List<Categorias>> GetAllAsync();
+    Task<List<Categorias>> GetAllAsync(int user_id);
     
     //Metodo para retornar el id de los productos que se borrará
     Task<bool> DeleteAsync(int id);

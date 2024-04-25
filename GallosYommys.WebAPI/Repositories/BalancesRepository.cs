@@ -1,3 +1,4 @@
+using Dapper;
 using Dapper.Contrib.Extensions;
 using GallosYommys.Core.Entities;
 using GallosYommys.WebAPI.DataAccess.Interfaces;
@@ -57,6 +58,13 @@ public class BalancesRepository : IBalancesRepository
     public async Task<Balances?> GetById(int id)
     {
         return await _dbContext.Connection.GetAsync<Balances>(id);
+    }
+    
+    public async Task<Balances?> GetByUserId(int userId)
+    {
+        return await _dbContext.Connection.QueryFirstOrDefaultAsync<Balances>(
+            "SELECT * FROM Balances WHERE user_id = @userId AND IsDeleted = 0 ORDER BY CreatedDate DESC LIMIT 1", 
+            new { userId });
     }
     
 }

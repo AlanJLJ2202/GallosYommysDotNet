@@ -17,12 +17,12 @@ public class UsersRepository : IUsersRepository
         _dbContext = context;
     }
     
-    /*public async Task<Users?> Login(string email, string password)
+    public async Task<Users?> Login(string email, string password)
     {
         try
         {
             // Realiza una consulta para encontrar el usuario por su nombre de usuario y contraseña
-            var query = "SELECT * FROM Users WHERE Email = @email AND Password = @Password";
+            var query = "SELECT * FROM Users WHERE Email = @email AND Password = @Password AND IsDeleted = 0";
             var user = await _dbContext.Connection.QueryFirstOrDefaultAsync<Users>(query, new { Email = email, Password = password });
 
             return user;
@@ -32,7 +32,7 @@ public class UsersRepository : IUsersRepository
             Console.WriteLine($"Error al intentar iniciar sesión: {ex.Message}");
             return null;
         }
-    }*/
+    }
 
     public async Task<Users> SaveAsync(Users users)
     {

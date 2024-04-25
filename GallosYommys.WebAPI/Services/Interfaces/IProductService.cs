@@ -13,7 +13,7 @@ public interface IProductService
     Task<ProductDto> UpdateAsync(ProductDto product);
     
     //Metodo para retornar una lista de productos
-    Task<List<ProductDto>> GetAllAsync();
+    Task<List<ProductDto>> GetAllAsync(int user_id);
     
     //Metodo para retornar el id de los productos que se borrará
     Task<bool> DeleteAsync(int id);

@@ -19,11 +19,11 @@ public class ProductsController : ControllerBase
     }
     
     [HttpGet]
-    public async Task<ActionResult <Response<List<Products>>>> GetAll()
+    public async Task<ActionResult <Response<List<Products>>>> GetAll(int user_id)
     {
         var response = new Response<List<ProductDto>>
         {
-            data = await _productService.GetAllAsync()
+            data = await _productService.GetAllAsync(user_id)
         };
         
         return Ok(response);

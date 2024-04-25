@@ -20,10 +20,10 @@ public class CategoriasController : ControllerBase
     
     
     [HttpGet]
-    public async Task<ActionResult<Response<List<Categorias>>>> GetAll()
+    public async Task<ActionResult<Response<List<Categorias>>>> GetAll(int user_id)
     {
         var response = new Response<List<CategoriasDto>>();
-        response.data = await _categoriasService.GetAllAsync();
+        response.data = await _categoriasService.GetAllAsync(user_id);
         
         return Ok(response);
     }
